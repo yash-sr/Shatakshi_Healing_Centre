@@ -134,7 +134,18 @@ span {
 .text-white a {
   color: #fff;
 }
-
+/* .text-dark h1,
+.text-dark h2,
+.text-dark h3,
+.text-dark h4,
+.text-dark h5,
+.text-dark h6,
+.text-dark p,
+.text-dark span,
+.text-dark li,
+.text-dark a {
+  color: #493365
+} */
 .i-fix:before {
   margin-right: -15px;
 }
@@ -217,8 +228,12 @@ span {
 }
 
 .site-btn.sb-dark {
-  background: #5a496a;
+  background: #bc5f7d;
   color: #fff;
+}
+.site-btn.sb-dark:hover {
+  background: #c0496e;
+  color: rgb(226, 217, 217);
 }
 
 /* Accordion */
@@ -590,7 +605,9 @@ span {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
-
+.main-menu li a h2{
+  color: #dacfad;
+}
 .main-menu li a:hover {
   color: #ffe014;
 }
@@ -655,6 +672,12 @@ span {
   letter-spacing: 2px;
   margin-bottom: 40px;
   color: #fff;
+}
+.hero-content p span{
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  color: #f7ffa0;
 }
 
 .hero-img {
@@ -765,9 +788,9 @@ span {
   transition: transform 0.4s, z-index 0.4s;
 }
 
-.course-item .ci-icon #wings-pin {
+/* .course-item .ci-icon #wings-pin {
   max-width: 200px;
-}
+} */
 .course-item span {
   font-size: 12px;
   text-transform: uppercase;
@@ -803,13 +826,36 @@ span {
   opacity: 1;
 }
 
-/* ----------------
+.knowMore{
+  background: #bc5f7d;
+  color: #fff;
+  width:100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top:10px;
+  padding: 10px 15px;
+  border-radius:5px;
+  text-decoration: none;
+} 
+.knowMore:hover {
+  background: #be4d71;
+  color: rgb(228, 228, 228);
+}
+   /*----------------
     Service info section
    ---------------------*/
-
-.service-info-section {
-  padding-top: 20px;
-}
+    .reiki-hero-section{
+      height: 550px;
+      overflow: hidden
+    }
+   .service-info-section {
+    margin-top: 0px;
+    margin-bottom: 150px;
+  }
+  #service-detail>p{
+      margin-top:0px;
+      color: black
+  }
 
 /* ----------------
     Timetable section
