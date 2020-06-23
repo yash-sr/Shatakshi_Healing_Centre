@@ -546,6 +546,44 @@ span {
   }
 }
 
+/*--------------------- 
+    Registration section
+
+-----------------------*/
+.registration-section{
+  border:rgb(90, 34, 95) solid;
+  width:60%;
+  margin-right:auto;
+  margin-left:auto;
+  background-color:white;
+  position:fixed;
+  top:35%;
+  left:-100%;
+  z-index:2;
+}
+.registration-section.active{
+  left:20%;
+}
+.registration-section span{
+  color:red
+}
+.registration-section em{
+  color: #673ab7
+}
+.closeRegisterBtn{
+  position: absolute;
+  top:10px;
+  right:10px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 767px) {
+  .registration-section.active{
+    width:90%;
+    top:30%;
+    left:5%;
+  }
+}
+
 /*------------------
      Header section
    
@@ -852,19 +890,22 @@ span {
     margin-top: 0px;
     margin-bottom: 150px;
   }
-  #service-detail>p{
+  #serviceInfo p{
       margin-top:0px;
-      color: black
+      font-size: medium;
+      color: rgb(29, 29, 29)
   }
   .register-btn{
     background: #bc5f7d;
     color: #fff;
     position: relative;
+    width:fit-content;
     top:20px;
     left:80%;
     padding: 10px 15px;
     border-radius:5px;
     text-decoration: none;
+    cursor: pointer;
   } 
   .register-btn:hover {
     background: #be4d71;
@@ -1006,21 +1047,31 @@ span {
   overflow: hidden;
 }
 
-.map-warp {
-  width: 50%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  position: absolute;
+.contact-section p{
+  font-size: 14px;
 }
 
-.map-warp iframe {
-  width: 100%;
-  height: 100%;
+.trainer-detail{
+  background-color: rgba(255, 255, 255, 0.274); 
+  /* width:100%; */
+  height: fit-content;
+  padding: 55px 130px 55px;
+  margin: 45px 0px;
+  position: relative;
 }
+
+.trainer-detail img{
+  width:250px;
+  height: 250px;
+  border: 0.5px rgb(255, 255, 255) solid;
+  padding: 2px;
+  border-radius: 10px;
+  position: relative; 
+}
+
 
 .contact-box {
-  padding: 135px 130px 160px;
+  padding: 100px 130px 30px;
 }
 
 /* ----------------
@@ -1670,11 +1721,6 @@ span {
   .testimonial-img-2 {
     display: none;
   }
-  .map-warp {
-    position: relative;
-    height: 500px;
-    width: 100%;
-  }
   .contact-box {
     padding: 135px 0 160px;
     max-width: 650px;
@@ -1784,10 +1830,8 @@ span {
   .meditation-section {
     margin-top: -270px;
   }
-  .map-warp {
-    position: relative;
-    height: 500px;
-    width: 100%;
+  .trainer-detail{
+    padding: 105px 0 100px 6px;
   }
   .contact-box {
     padding: 135px 0 160px;

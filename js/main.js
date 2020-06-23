@@ -99,6 +99,13 @@ $(window).on('load', function () {
         }
     });
 
+    /* registerBtn */
+    $('.register-btn').click(()=>{
+        $('.registration-section').toggleClass('active')
+    })
+    $('.closeRegisterBtn').click(()=>{
+        $('.registration-section').toggleClass('active')
+    })
     //     /*-----------------------------
     //     service selection info
     //     -----------------------------*/
