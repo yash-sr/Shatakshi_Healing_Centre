@@ -895,7 +895,7 @@ span {
       font-size: medium;
       color: rgb(29, 29, 29)
   }
-  .register-btn{
+  #registerBtn{
     background: #bc5f7d;
     color: #fff;
     position: relative;
@@ -907,7 +907,7 @@ span {
     text-decoration: none;
     cursor: pointer;
   } 
-  .register-btn:hover {
+  #registerBtn:hover {
     background: #be4d71;
     color: rgb(228, 228, 228);
   }
