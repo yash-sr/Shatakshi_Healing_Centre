@@ -99,11 +99,51 @@ $(window).on('load', function () {
         }
     });
 
+    /*--------------------------
+    Angel Workshop Bullet Points
+    ----------------------------*/
+
+    // angel workshop one
+    [
+        "7 Chakras",
+        "what is angel therapy",
+        "Introduction of 15 Archangels",
+        "Gaurdian Angel",
+        "Angel presence and their signs",
+        "Angel colours",
+        "Angel numbers and their meaning",
+        "Etheric cord cutting",
+        "Angelic colours and their meaning & uses",
+        "Balancing chakra with crystals",
+        "Angel spells"
+    ].map(point=>{
+        $('#angel_workshop_one').append(`<li><span class="fs16lh1-5">${point} <br></span></li>`)
+    });
+
+    [
+        "complete knowledge of 7 chakras",
+        "solve problem with archangel meditation",
+        "angel letter writing",
+        "clean, balance chakras and aura with archangel meditation",
+        "create angel alter",
+        "Protection with archangel meditation",
+        "Angel crystal",
+        "binding angel grid for manifestation",
+        "angel grid box",
+        "balance heart chakra and clean emotions",
+        "angelic zibu symbols and uses",
+        "using essential oil"
+    ].map(point=>{
+        $('#angel_workshop_two').append(`<li><span class="fs16lh1-5">${point} <br></span></li>`)
+    });
+
+
+
     /* registerBtn */
-    $('.register-btn').click(()=>{
+    $('.register-btn').click(() => {
         $('.registration-section').toggleClass('active')
     })
-    $('.closeRegisterBtn').click(()=>{
+    $('.closeRegisterBtn').click(() => {
         $('.registration-section').toggleClass('active')
     })
     //     /*-----------------------------
