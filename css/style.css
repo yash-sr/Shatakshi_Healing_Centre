@@ -1579,9 +1579,13 @@ span {
     font-size: 45px;
   }
 
-  .hero-img,
+  .hero-img{
+    /* z-index:0; */
+    opacity:0.2;
+    right:0px;
+    bottom:20px;
+  }
   .meditation-img,
-
   .meditation-section {
     margin-top: -270px;
   }
